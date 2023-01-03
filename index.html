@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Aim Practice</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h3 class="points">00</h3>
+
+        <div class="gridContainer" id="gridContainer">
+        </div>
+
+        <div class="buttonContainer">
+            <label for="time">Time</label>
+            <input id="time" type="number" placeholder="Game Time in milisecond" value="10000">
+            <label for="speed">Speed</label>
+            <input id="speed" type="number" placeholder="Speed in milisecond" value="1000">
+            <button onclick="startGame()" id="startBtn">Start</button>
+            <button onclick="stopGame()" id="stopBtn" disabled>Stop</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
